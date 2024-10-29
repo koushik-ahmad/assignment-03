@@ -25,6 +25,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-bg': '#ABEF5F',
                     }
                 }
             }
@@ -34,60 +35,62 @@
 
 <body class="font-manrope">
     <!-- header section  -->
-    <header>
-        <div class="navbar bg-base-100">
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 justify-between">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
+
+                <div class="flex justify-center items-center gap-2">
+                    <i
+                        class="fa-solid fa-arrow-right w-8 h-8 bg-primary-bg inline-flex rounded-full justify-center items-center -rotate-45 text-xl"></i>
+                    <a class="text-3xl font-bold">Rinterio</a>
                 </div>
-                <a class="btn btn-ghost text-xl">daisyUI</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
+            <div class="navbar-end gap-5 hidden md:flex">
+                <i
+                    class="fa-solid fa-magnifying-glass w-9 h-9 inline-flex border-2 rounded-full justify-center items-center text-lg text-gray-400"></i>
+                <i
+                    class="fa-solid fa-cart-shopping w-9 h-9 inline-flex border-2 rounded-full justify-center items-center text-lg text-gray-400"></i>
+                <div>
+                    <a class="bg-primary-bg px-4 py-2 rounded-full font-semibold text-lg">
+                        Book Consult
+                        <i
+                            class="fa-solid fa-arrow-right w-7 h-7 bg-black inline-flex rounded-full justify-center items-center -rotate-45 text-lg text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost rounded-full lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu lg:hidden menu-sm dropdown-content bg-base-100 rounded-box z-[1] right-1 mt-3 w-32 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
             </div>
         </div>
     </header>
 
     <!-- main section -->
-    <main>
+    <main class="container mx-auto">
         <section>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-success">Success</button>
-            <button class="btn btn-warning">Warning</button>
-            <button class="btn btn-error">Error</button>
+
         </section>
 
 
