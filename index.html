@@ -118,7 +118,6 @@
                 <div class="py-24 px-10 relative">
 
                     <div class="lg:flex gap-4">
-
                         <img class="absolute top-4 left-2 border-2 lg:flex hidden border-gray-300 border-dashed py-5"
                             src="assets/Vector.png" alt="">
 
@@ -127,7 +126,8 @@
                                 <i class="fa-solid fa-arrow-right pr-1 text-lg text-black"></i>
                                 About Us
                             </button>
-                            <h2 class="text-5xl font-bold py-5">We design thoughtful, <br> liveable spaces</h2>
+                            <h2 class="md:text-5xl text-3xl font-bold py-5">We design thoughtful, <br> liveable spaces
+                            </h2>
                             <p class="py-6">
                                 Creating a modern real estate platform involves combining innovative features that make
                                 the property search, listing,
@@ -191,7 +191,6 @@
                         <h3 class="text-4xl font-bold my-3">307+</h3>
                         <p class="text-xl">Staff Members</p>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -235,7 +234,6 @@
                         <p class="text-lg">Provide a comprehensive breakdown of costs for each phase of the project,
                             including materials, labor permits.</p>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -259,7 +257,7 @@
                     <div class="grid lg:grid-cols-4 grid-cols-1 grid-rows-2 items-center justify-center gap-4">
                         <!-- card 1 -->
                         <div class="lg:col-span-3  col-span-12 rounded-xl">
-                            <div class="card p-5 md:flex-row border-2 card-compact bg-base-100 shadow-xl">
+                            <div class="card py-3 px-2 md:flex-row border-2 card-compact bg-base-100 shadow-xl">
                                 <figure>
                                     <img class="w-full" src="assets/img1.png" alt="Shoes" />
                                 </figure>
@@ -288,7 +286,7 @@
                         </div>
                         <!-- card 2 -->
                         <div
-                            class="lg:col-span-1 md:col-span-4 md:p-5 col-span-12  border-2 lg:p-6 p-4 shadow-xl bg-white rounded-2xl">
+                            class="lg:col-span-1 md:col-span-4 md:p-5 col-span-12 border-2 lg:p-8 p-4 shadow-xl bg-white rounded-2xl">
                             <img class="w-full" src="assets/img2.png" alt="">
                         </div>
                         <!-- card 3 -->
@@ -298,7 +296,7 @@
                         </div>
                         <!-- card 4 -->
                         <div class="lg:col-span-2 col-span-12 rounded-xl">
-                            <div class="card p-12 md:flex-row border-2 card-compact bg-base-100 shadow-xl">
+                            <div class="card py-8 px-3 md:flex-row border-2 card-compact bg-base-100 shadow-xl">
                                 <figure>
                                     <img class="w-full" src="assets/img4.png" alt="Shoes" />
                                 </figure>
@@ -438,29 +436,44 @@
         </section>
 
         <!-- let's connect section  -->
-        <section class="bg-gray-100">
+        <section class="bg-gray-100 min-h-screen bg-cover my-1 py-5" style="background-image: url(/assets/bg.jpg);">
             <div class="container mx-auto py-20">
                 <div class="text-center">
                     <button class="text-lg  bg-white px-4 py-2 rounded-full font-semibold ">
                         <i class="fa-solid fa-arrow-right pr-1 text-lg text-black"></i>
                         Let’s Connect
                     </button>
-                    <h2 class="text-4xl font-bold py-5">Let’s Discuss Next Project</h2>
-                    <p class="">
+                    <h2 class="md:text-5xl text-3xl font-bold py-5">Let’s Discuss Next Project</h2>
+                    <p class="pb-2">
                         The barn house captivates with its blend of rustic charm and modern sophistication, <br>
                         featuring weathered wood, sleek metal accents.
                     </p>
                 </div>
 
-                <div>
-
+                <div class="w-4/6 mx-auto py-2">
+                    <div class="grid md:grid-cols-2 justify-items-center items-center gap-5">
+                        <input type="text" placeholder="First Name*"
+                            class="input input-bordered rounded-full w-full max-w-xl" />
+                        <input type="text" placeholder="Last Name*"
+                            class="input input-bordered rounded-full w-full max-w-xl" />
+                        <input type="phone" placeholder="Phone Number*"
+                            class="input input-bordered rounded-full w-full max-w-xl" />
+                        <input type="email" placeholder="Email Address*"
+                            class="input input-bordered rounded-full w-full max-w-xl" />
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center items-center gap-5 py-5">
+                        <textarea placeholder="Write your message here"
+                            class="textarea textarea-bordered textarea-lg h-[200px] rounded-2xl w-full max-w-full">
+                        </textarea>
+                        <button class="w-full bg-primary-bg px-5 py-3 rounded-full font-semibold text-lg">
+                            Send Mail
+                            <i
+                                class="fa-solid fa-arrow-right w-7 h-7 bg-black inline-flex rounded-full justify-center items-center -rotate-45 text-lg text-white"></i>
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </section>
-
-
-
     </main>
 
     <!-- footer section  -->
