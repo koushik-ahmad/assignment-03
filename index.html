@@ -61,11 +61,11 @@
                 <i
                     class="fa-solid fa-cart-shopping w-9 h-9 inline-flex border-2 rounded-full justify-center items-center text-lg text-gray-400"></i>
                 <div>
-                    <a class="bg-primary-bg px-4 py-2 rounded-full font-semibold text-lg">
+                    <button class="bg-primary-bg px-4 py-2 rounded-full font-semibold text-lg">
                         Book Consult
                         <i
                             class="fa-solid fa-arrow-right w-7 h-7 bg-black inline-flex rounded-full justify-center items-center -rotate-45 text-lg text-white"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="dropdown ">
@@ -86,12 +86,9 @@
                 </ul>
             </div>
         </div>
-    </header>
 
-    <!-- main section -->
-    <main class="container mx-auto">
         <!-- banner section  -->
-        <section>
+        <div class="pb-10">
             <div class="flex flex-col gap-5 justify-center items-center">
                 <img class="" src="assets/banner.png" alt="">
                 <h2 class="lg:w-4/6 lg:text-5xl  md:text-4xl text-3xl font-bold text-center">A barn house of this design
@@ -104,11 +101,65 @@
                     interface and search features, you can effortlessly explore a wide range of properties for
                     sale and rent.
                 </p>
-                <a class="bg-secondary-bg px-4 py-2 rounded-full font-semibold text-lg">
+                <button class="bg-secondary-bg px-4 py-2 rounded-full font-semibold text-lg">
                     View Details
                     <i
                         class="fa-solid fa-arrow-right w-8 h-8 bg-primary-bg inline-flex rounded-full justify-center items-center -rotate-45 text-lg text-black"></i>
-                </a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- about section -->
+        <section class="bg-gray-100">
+            <div class="container mx-auto">
+                <div class="py-24 px-10 relative">
+
+                    <div class="lg:flex gap-4">
+
+                        <img class="absolute top-4 left-2 border-2 lg:flex hidden border-gray-300 border-dashed py-5"
+                            src="assets/Vector.png" alt="">
+
+                        <div class="flex-1 lg:text-start  text-center">
+                            <button class=" bg-white px-4 py-2 rounded-full font-semibold text-lg">
+                                <i class="fa-solid fa-arrow-right pr-1 text-lg text-black"></i>
+                                About Us
+                            </button>
+                            <h2 class="text-5xl font-bold py-5">We design thoughtful, <br> liveable spaces</h2>
+                            <p class="py-6">
+                                Creating a modern real estate platform involves combining innovative features that make the property search, listing,
+                                and transaction process easier, faster, and more transparent for users.
+                            </p>
+                            <div class="lg:flex-col md:flex flex-row gap-2 py-5">
+                                <div class="stats shadow m-2 py-4">
+                                    <div class="stat flex justify-center items-center">
+                                        <img src="assets/commercial.png" alt="">
+                                        <div class="text-start">
+                                            <h3 class="font-bold text-xl">Commercial</h3>
+                                            <p>Information on utilities, loading docks, accessibility, zoning regulations, parking spaces, and floor plans.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stats shadow m-2 py-4">
+                                    <div class="stat flex justify-center items-center">
+                                        <img src="assets/residential.png" alt="">
+                                        <div class="text-start">
+                                            <h3 class="font-bold text-xl">Residential</h3>
+                                            <p>Details about number of bedrooms, bathrooms, square footage, energy ratings, and additional amenities like pools or
+                                            gardens.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 ">
+                            <img src="assets/Rectangle.png" class="w-full rounded-2xl shadow-2xl" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
